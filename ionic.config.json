@@ -1,0 +1,7 @@
+{
+  "name": "WaveTune",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
