@@ -1,27 +1,205 @@
-#container {
-  text-align: center;
 
+*{
+  font-family: "Inter",sans-serif;
+}
+ion-header{
+    ion-toolbar{
+    --color: #FFF;
+    border-end-start-radius : 2rem;
+    border-end-end-radius : 2rem;
+    --min-height: 190px;
+    padding-left: 1.5rem;
+    ion-title{
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 2rem;
+      width: 188px;
+      height: 33px;
+    }
+    
+  }
+}
+
+/*Contenido*/
+
+.sB{
+  
+  margin-left: 2.5%;
+  top: 0.45rem;
+  width: 95%;
+}
+
+.list_Songs {
+  background: #ffffff;
+  width: 100%;
+  height: 608px;
+  left: 0px;
+  top: 262px;
+}
+ion-grid{
+  
+  padding: 0px;
+  padding-left: 6px; 
+  ion-col {
+    padding: 0px;
+  }
+  ion-row { 
+    height: 25rem;
+  }
+}
+
+.albums {
+  background: transparent;
+  width: 178px;
+  height: 200px;
+}
+
+.cover {
+  border-radius: 20px;
+  width: 153px;
+  height: 153px;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  left: calc(50% - 77px);
+  top: 1px;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.title_Song{
+  
+  text-align: center;
+  position: absolute;
+  left: calc(50% - 79px);
+  top: 166px;
+  width: 157px;
+  height: 34px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+/*Reproductor*/
 
-  color: #8c8c8c;
+.reproClose{
+  position: fixed;
+  bottom: 0.5%;
+  width: 95%;
+  margin: 2.5%;
+  height: 4.25rem;
 
-  margin: 0;
+  --border-radius: 1rem;
 }
 
-#container a {
-  text-decoration: none;
+.coverRC{
+  background: #ffffff;
+  border-radius: 10px;
+  width: 3.375rem;
+  height: 3.25rem;
+  position: absolute;
+  left: 0px;
+  overflow: hidden;
+}
+
+
+.titleSongRC {
+  color: #ffffff;
+  position: absolute;
+  left: 4.5rem;
+  font: 700 15px "Inter", sans-serif;
+}
+
+.play{
+  color: #ffffff;
+  position: absolute;
+  right: 3rem;
+}
+
+.forward{
+  color: #ffffff;
+  position: absolute;
+  right: 0rem;
+}
+
+
+/*Modal interfaz reproductor Abierto*/
+
+ion-modal {
+  --height: 90%;
+  --background:#000000;
+  .block {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    
+  .coverRA {
+    border-radius: 20px;
+    width: 330px;
+    height: auto;
+    position: absolute;
+    top: 4.2rem;
+  }
+
+  .songRA{
+    color: #FFF;
+    
+    font-weight: 600;
+    font-size: 1.75rem;
+    position: absolute;
+    top: 25rem;
+    margin-right: 90px;
+    
+  }
+  .authorRA{
+    color: #FFF;
+    
+    font-size: 1rem;
+    position: absolute;
+    top: 29rem;
+    margin-right: 190px;
+  }
+
+  .rectangle {
+    background: #e9e9e9;
+    border-radius: 100px;
+    width: 330px;
+    height: 8px;
+    position: absolute;
+    top: 32rem;
+  }
+
+  .rectangle2 {
+    z-index: 1;
+    background: #F3ADC5;    
+    border-radius: 100px;
+    width: 170px;
+    height: 8px;
+    position: absolute;
+    top: 32rem;
+    margin-right: 160px;
+    
+  }
+  .IconRA{
+    color: #FFF;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .backRA{
+    position: absolute;
+    left: 4rem;
+    top: 35rem;
+    
+  }
+  .playRA{
+    position: absolute;
+    top: 35rem;
+    left: 10rem;
+    right: 10rem;
+  }
+  
+  .forwardRA{
+    position: absolute;
+    
+    right: 4rem;
+    top: 35rem;
+    
+  }
+  }
+
 }

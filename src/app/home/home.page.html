@@ -1,20 +1,103 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header class="ion-no-border" >
+  <ion-toolbar color="dark" >
+    <ion-title>Álbums</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content >
+  <ion-searchbar class="sB" color="light" animated="true" placeholder="Buscar en álbumes" mode="ios"></ion-searchbar>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-grid fixed class="list-songs">
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="auto">
+        <ion-button  class="albums" routerLink="/list-songs" expand="full" fill="clear">
+          <img class="cover" src="./../../assets/img/flowerBoy.jpeg" />
+          <ion-text color="danger" class="title_Song">Flower Boy</ion-text>
+        </ion-button>
+      </ion-col>
+
+      <ion-col size="auto">
+        <ion-button  class="albums" routerLink="/list-songs2" expand="full" fill="clear">
+          <img class="cover" src="./../../assets/img/igor.jpeg" />
+          <ion-text color="danger" class="title_Song">IGOR</ion-text>
+        </ion-button>
+      </ion-col>
+
+      <ion-col size="auto">
+        <ion-button  class="albums" routerLink="/list-songs3" expand="full" fill="clear">
+          <img class="cover" src="./../../assets/img/starboy.jpeg" />
+          <ion-text color="danger" class="title_Song">Starboy</ion-text>
+        </ion-button>
+      </ion-col>
+
+      <ion-col size="auto">
+        <ion-button  class="albums"routerLink="/list-songs4" expand="full" fill="clear">
+          <img class="cover" src="./../../assets/img/nectar.jpeg" />
+          <ion-text color="danger" class="title_Song">Nectar</ion-text>
+        </ion-button>
+        </ion-col>
+
+        <ion-col size="auto">
+          <ion-button  class="albums"routerLink="/list-songs5" expand="full" fill="clear">
+            <img class="cover" src="./../../assets/img/damn.jpeg" />
+            <ion-text color="danger" class="title_Song">DAMN.</ion-text>
+          </ion-button>
+          </ion-col>
+
+          <ion-col size="auto">
+            <ion-button  class="albums"routerLink="/list-songs6" expand="full" fill="clear">
+              <img class="cover" src="./../../assets/img/utopia.png" />
+              <ion-text color="danger" class="title_Song">Utopia</ion-text>
+            </ion-button>
+          </ion-col>
+
+          <ion-col size="auto">
+            <ion-button  class="albums" expand="full" fill="clear">
+              <img class="cover" src="./../../assets/img/blanco.png" />
+              <ion-text color="danger" class="title_Song"></ion-text>
+            </ion-button>
+          </ion-col>
+
+          <ion-col size="auto">
+            <ion-button  class="albums"  expand="full" fill="clear">
+              <img class="cover" src="./../../assets/img/blanco.png" />
+              <ion-text color="danger" class="title_Song"></ion-text>
+            </ion-button>
+          </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+ 
+  <ion-button color="dark" class="reproClose" id="open-modal">
+    <img class="coverRC" src="./../../../assets/img/igor.jpeg" />
+        
+    <div class="titleSongRC">A BOY IS A GUN*</div>
+    <ion-button class="play" fill="clear"><ion-icon slot="icon-only" name="play"></ion-icon></ion-button>
+    <ion-button class="forward" fill="clear"><ion-icon slot="icon-only" name="play-forward"></ion-icon></ion-button>
+    
+  </ion-button>
+
+  
+    
+  
+    <ion-modal trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+      <ng-template>
+        <div class="block">
+
+          <img class="coverRA" src="./../../assets/img/igor.jpeg" />
+          
+          <h2 class="songRA">A BOY IS A GUN*</h2>
+          <ion-text class="authorRA">Tyler The creator</ion-text>
+          <div class="rectangle"></div>
+          <div class="rectangle2"></div>
+
+          <ion-button class="backRA"  fill="clear"><ion-icon class="IconRA" slot="icon-only" size="large" name="play-back"></ion-icon></ion-button>
+          <ion-button class="playRA"  fill="clear"><ion-icon class="IconRA" slot="icon-only" size="large" name="play"></ion-icon></ion-button>
+          <ion-button class="forwardRA"  fill="clear"><ion-icon class="IconRA" slot="icon-only" size="large" name="play-forward"></ion-icon></ion-button>
+        </div>
+      </ng-template>
+    </ion-modal>
+  
+    
 </ion-content>

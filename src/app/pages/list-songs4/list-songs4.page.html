@@ -1,0 +1,123 @@
+<div class="black"></div>
+
+<ion-header class="ion-no-border">
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button routerLink="/home">
+      <ion-icon name="caret-back-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+
+  <ion-buttons slot="end">
+    <ion-button>
+      <ion-icon name="ellipsis-horizontal" ></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+<img class="cover" src="../../../assets/img/nectar.jpeg" />
+<ion-title>Nectar</ion-title>
+<ion-text class="author">Joji</ion-text>
+<ion-text color="primary"  class="tracks">18 tracks</ion-text>
+
+<ion-button class="bPlay"fill="clear">
+  <ion-icon class="iconPlayB"  slot="icon-only"  name="play-circle"></ion-icon>
+</ion-button>
+
+<ion-button class="bRandom"fill="clear">
+  <ion-icon class="iconRandom"  slot="icon-only"  name="shuffle"></ion-icon>
+</ion-button>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-button class="song" expand="block" color="light" size="small">
+    Ew
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    MODUS
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    Tick Tock
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    Daylight
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    Upgrade
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    Gimme Love
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    Run
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    Sanctuary 
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    High Hopes (Ft. Omar Apollo)
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    NITROUS
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    Pretty Boy (Ft. Lil Yachty)
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    Normal People (Ft. rei brown)
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    Afterthought
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    Mr. Hollywood 
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    777
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    Reanimator (Ft. Yves Tumor)
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    Like You Do
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    Your Man 
+  </ion-button>
+  <ion-button class="song" expand="block"fill="clear" size="small">
+    
+  </ion-button>
+  <ion-button class="song" expand="block" fill="clear" size="small">
+    
+  </ion-button>
+
+  <ion-button  color="dark"class="reproClose" id="open-modal">
+    <img class="coverRC" src="./../../../assets/img/igor.jpeg" />
+        
+    <div class="titleSongRC">A BOY IS A GUN*</div>
+    <ion-button class="play" fill="clear"><ion-icon class="IRC" slot="icon-only" name="play"></ion-icon></ion-button>
+    <ion-button class="forward" fill="clear"><ion-icon class="IRC" slot="icon-only" name="play-forward"></ion-icon></ion-button>
+    
+
+  </ion-button>
+
+  <ion-modal trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+    <ng-template>
+      <div class="block">
+
+        <img class="coverRA" src="./../../assets/img/igor.jpeg" />
+        
+        <h2 class="songRA">A BOY IS A GUN*</h2>
+        <ion-text class="authorRA">Tyler The creator</ion-text>
+        <div class="rectangle"></div>
+        <div class="rectangle2"></div>
+
+        <ion-button class="backRA"  fill="clear"><ion-icon class="IconRA" slot="icon-only" size="large" name="play-back"></ion-icon></ion-button>
+        <ion-button class="playRA"  fill="clear"><ion-icon class="IconRA" slot="icon-only" size="large" name="play"></ion-icon></ion-button>
+        <ion-button class="forwardRA"  fill="clear"><ion-icon class="IconRA" slot="icon-only" size="large" name="play-forward"></ion-icon></ion-button>
+      </div>
+    </ng-template>
+  </ion-modal>
+
+</ion-content>

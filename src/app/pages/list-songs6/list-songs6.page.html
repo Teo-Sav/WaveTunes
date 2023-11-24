@@ -1,0 +1,127 @@
+<div class="black"></div>
+
+<ion-header class="ion-no-border">
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button routerLink="/home">
+      <ion-icon name="caret-back-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+
+  <ion-buttons slot="end">
+    <ion-button>
+      <ion-icon name="ellipsis-horizontal" ></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<img class="cover" src="../../../assets/img/utopia.png" />
+<ion-title>Utopia</ion-title>
+<ion-text class="author">Travis Scot</ion-text>
+<ion-text color="primary" class="tracks">19 tracks</ion-text>
+
+<ion-button class="bPlay"fill="clear">
+  <ion-icon color="primary" class="iconPlayB"  slot="icon-only"  name="play-circle"></ion-icon>
+</ion-button>
+
+<ion-button class="bRandom"fill="clear">
+  <ion-icon color="primary" class="iconRandom"  slot="icon-only"  name="shuffle"></ion-icon>
+</ion-button>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-button class="song" expand="block" color="light" size="small">
+    HYAENA
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    THANK GOD
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    MODERN JAM
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    MY EYES
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    GOD'S COUNTRY
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    SIRENS
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    MELTDOWN
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    FE!N
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    DELRESTO(ECHOES)
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    I KNOW?
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    TOPIA TWINS
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    CIRCUS MAXIMUS 
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    PARASAIL
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    SKITZO
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    LOST FOREVER
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    LOOOVE
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    K-POP
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    TELEKINESIS
+  </ion-button>
+  <ion-button class="song" expand="block" color="light" size="small">
+    TIL FURTHER NOTICE
+  </ion-button>
+  <ion-button class="song" expand="block"fill="clear" size="small">
+    
+  </ion-button>
+  <ion-button class="song" expand="block" fill="clear" size="small">
+    
+  </ion-button>
+
+  <ion-button  color="dark"class="reproClose" id="open-modal">
+    <img class="coverRC" src="./../../../assets/img/igor.jpeg" />
+        
+    <div class="titleSongRC">A BOY IS A GUN*</div>
+    <ion-button class="play"  fill="clear"><ion-icon class="IRC" slot="icon-only" name="play"></ion-icon></ion-button>
+    <ion-button class="forward"  fill="clear"><ion-icon class="IRC" slot="icon-only" name="play-forward"></ion-icon></ion-button>
+    
+
+  </ion-button>
+
+  <ion-modal trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+    <ng-template>
+      <div class="block">
+
+        <img class="coverRA" src="./../../assets/img/igor.jpeg" />
+        
+        <h2 class="songRA">A BOY IS A GUN*</h2>
+        <ion-text class="authorRA">Tyler The creator</ion-text>
+        <div class="rectangle"></div>
+        <div class="rectangle2"></div>
+
+        <ion-button class="backRA"  fill="clear"><ion-icon class="IconRA" slot="icon-only" size="large" name="play-back"></ion-icon></ion-button>
+        <ion-button class="playRA"  fill="clear"><ion-icon class="IconRA" slot="icon-only" size="large" name="play"></ion-icon></ion-button>
+        <ion-button class="forwardRA"  fill="clear"><ion-icon class="IconRA" slot="icon-only" size="large" name="play-forward"></ion-icon></ion-button>
+      </div>
+    </ng-template>
+  </ion-modal>
+
+</ion-content>

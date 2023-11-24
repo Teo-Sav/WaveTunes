@@ -1,0 +1,238 @@
+.black{
+    position: absolute;
+    height: 12rem;
+    width: 100%;
+    background: #000000;
+    border-radius: 0 0 2rem 0 ;
+    z-index: -1;
+}
+ion-header{
+  
+    height: 15rem;
+    z-index: 1;
+    margin-bottom: 1.5rem;
+    ion-toolbar{
+      --color:#FFFFFF;
+        top: 10px;
+        padding: 10px;
+        --background: transparent;
+    }
+    .cover {
+      border-end-end-radius: 20px;
+      border-start-end-radius: 20px;
+      width: 153px;
+      height: 153px;
+      position: absolute;
+      left: 0px;
+      top: 6rem;
+    }
+
+    
+    ion-title{
+      color: #FFF;
+      font-family: "Inter",sans-serif;
+      font-weight: 700;
+      font-size: 1.75rem;
+      margin-top: 2.25rem;
+      margin-left: 10rem;
+    }
+    .author{
+      color: #FFF;
+      font-family: "Inter",sans-serif;
+      width: 90%;
+      margin-top: 2.50rem;
+      margin-left: 11.5rem;
+    }
+    .tracks{
+      font-family: "Inter",sans-serif;
+      font-weight: 600;
+      position: absolute;
+      top: 13.50rem;
+      left: 11.5rem;
+    }
+
+    .bPlay{
+      position: absolute;
+      top: 12.3rem;
+      right: 0rem;
+    }
+    .iconPlayB{
+      color: hsl(26, 99%, 56%);
+      width: 3rem;
+      height: 3rem;
+    }
+
+    .bRandom{
+      position: absolute;
+      top: 12.75rem;
+      right: 3.5rem;
+    }
+    .iconRandom{
+      color: #FE811F;
+      width: 2rem;
+      height: 2rem;
+    }
+}
+  
+/*Contenido*/
+ion-content {
+    width: 100%;
+    height: 608px;
+
+    
+    .song {
+      --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.0);
+      margin-left: 5%;
+      margin-right: 5%;;
+      margin-bottom: 2.5%;
+      width: 90%;
+      height: 41px;
+      font: 700 15px "Inter", sans-serif;
+    }
+
+    
+}
+
+ 
+/*Reproductor*/
+.reproClose{
+  position: fixed;
+  bottom: 0.5%;
+  width: 95%;
+  margin: 2.5%;
+  height: 4.25rem;
+
+  --border-radius: 1rem;
+}
+
+.coverRC{
+  background: #ffffff;
+  border-radius: 10px;
+  width: 3.375rem;
+  height: 3.25rem;
+  position: absolute;
+  left: 0px;
+  overflow: hidden;
+}
+
+.titleSongRC {
+  color: #ffffff;
+  position: absolute;
+  left: 4.5rem;
+  font: 700 15px "Inter", sans-serif;
+}
+
+.IRC{
+  color:#FFFFFF ;
+}
+.play{
+  position: absolute;
+  right: 3rem;
+}
+
+.forward{
+  position: absolute;
+  right: 0rem;
+}
+
+.block {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Modal interfaz reproductor Abierto*/
+
+
+ion-modal {
+  --height: 90%;
+  --background:#000000;
+  .block {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  .coverRA {
+    border-radius: 20px;
+    width: 330px;
+    height: auto;
+    position: absolute;
+    top: 4.2rem;
+  }
+
+  .songRA{
+    color: #FFF;
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    font-size: 1.75rem;
+    position: absolute;
+    top: 25rem;
+    margin-right: 90px;
+    
+  }
+  .authorRA{
+    color: #FFF;
+    font-family: "Inter",sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    top: 29rem;
+    margin-right: 190px;
+  }
+
+  .rectangle {
+    background: #e9e9e9;
+    border-radius: 100px;
+    width: 330px;
+    height: 8px;
+    position: absolute;
+    top: 32rem;
+  }
+
+  .rectangle2 {
+    z-index: 1;
+    background: #F3ADC5;    
+    border-radius: 100px;
+    width: 170px;
+    height: 8px;
+    position: absolute;
+    top: 32rem;
+    margin-right: 160px;
+    
+  }
+  
+  
+
+  .IconRA{
+    color: #FFF;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .backRA{
+    position: absolute;
+    left: 4rem;
+    top: 35rem;
+    
+  }
+  .playRA{
+    position: absolute;
+    top: 35rem;
+    left: 10rem;
+    right: 10rem;
+  }
+  
+  .forwardRA{
+    position: absolute;
+    
+    right: 4rem;
+    top: 35rem;
+    
+  }
+  }
+
+ 
+}
